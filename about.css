@@ -41,11 +41,11 @@
     display: block;
     box-sizing: border-box;
     transition: 200ms;
-    scale: 105%;
+    scale: 110%;
 }
 
 .image img:hover {
-    scale: 100%;
+    scale: 102%;
     cursor: pointer;
 }
 

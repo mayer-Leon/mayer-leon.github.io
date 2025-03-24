@@ -17,15 +17,14 @@
     </style>
 </head>
 <body>
-    <h2>Portfolio</h2>
-    <h1 style="margin-bottom: 10px;">Leon Mayer</h1>
-    <hr id="firstHr">
+    <a href="/" style="text-decoration: none;"><h2>Portfolio</h2></a>
+    <a href="/" style="text-decoration: none;"><h1 style="margin-bottom: 10px;">Leon Mayer</h1></a>
     <div id="buttons">
         <a href="/">FOTOS</a>
         <a href="/filme">FILME</a>
         <a href="/über-mich" class="shadow" style="color: black; background-color: white; font-weight: 600;">ÜBER MICH</a>
     </div>
-    <hr id="secondHr">
+    <a href="/kontakt/" class="contact">Kontaktiere mich hier</a>
 
     <div id="fullPhotos">
         <div class="fo" id="leon"><img src="/Fotos/Leon_mit_Kamera.jpg" alt="Leon mit Kamera in der Hand"></div>
@@ -51,7 +50,7 @@
     <div class="content" id="content2">
         <div id="texts2">
             <h3 class="heading">Filme</h3>
-            <p class="second text">Kurzfilme erstelle ich sogar schon seit Ende 2020, als ich zu Weihnachten ein neues Handy bekommen habe und dessen Kamera ausprobieren wollte. Damals waren das noch kurze, spontan entstandene Geschichten ohne Ton, heute plane ich jeden Shot und jeden Effekt und achte im Schnitt auf die richtige Wahl der Soundeffekte, des Pacings und der Musik. Ich versuche außerdem, jedes Video so dynamisch wie möglich zu gestalten, sei das durch versteckte Übergänge, auf die Musik angepasste Schnitte, die passende Verwendung von Sound-Effekten oder stilvolles Color Grading.</p>
+            <p class="second text">Kurzfilme erstelle ich sogar schon seit Ende 2020, als ich zu Weihnachten ein neues Handy bekommen habe und dessen Kamera ausprobieren wollte. Damals waren das noch kurze, spontan entstandene Geschichten ohne Ton; heute plane ich jeden Shot und jeden Effekt und achte im Schnitt auf die richtige Wahl der Soundeffekte, des Pacings und der Musik. Ich versuche außerdem, jedes Video so dynamisch wie möglich zu gestalten, sei das durch versteckte Übergänge, auf die Musik angepasste Schnitte, die passende Verwendung von Sound-Effekten oder stilvolles Color Grading.</p>
         </div>
         <div class="image">
             <img src="/Fotos/Kamera_groß.jpg" onclick="fullKamera()" alt="Nur Kamera in der Hand">
@@ -106,23 +105,15 @@
     </div>
     
     <div id="footer">
-        <p>©Leon Mayer<br><span class="xs">12/2024</span></p>
+        <p>©Leon Mayer<br><span class="xs">03/2025</span></p>
         <div id="socials">
             <a href="https://instagram.com/leonm.fotos/"><img src="/Fotos/Insta.jpg" alt="Instagram"></a>
             <a href="https://youtube.com/@leonm.videos/"><img src="/Fotos/YT.jpg" alt="YouTube"></a>
-            <button onclick="email()"><img src="/Fotos/Mail.jpg" alt="E-Mail"></button>
+            <a href="/kontakt/"><img src="/Fotos/Mail.jpg" alt="E-Mail"></a>
         </div>
-        <a href="mailto:leonmayer.fotos@gmail.com" id="mail" style="display: none;">leonmayer.fotos@gmail.com</a>
     </div>
 
-    <script>
-        function email() {
-            let mail = document.getElementById("mail");
-            mail.style.display = "block";
-            let socials = document.getElementById("socials");
-            socials.style.marginBottom = "0px";
-        };
-        
+    <script>     
         (function() {
     let isScrollLocked = false;
     let scrollPosition = { x: 0, y: 0 };

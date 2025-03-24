@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="gxlQo9ncnPRMfKp_xRqcJNYkzBzLmPYs5DAbG5XaQaI"/>
+    <meta property="og:title" content="Leon Mayer - Portfolio">
+    <meta property="og:description" content="Eine Sammlung meiner besten Fotos und Filme.">
+    <meta property="og:image" content="/Fotos/Preview.jpg">
+    <title>Kontakt - Leon Mayer</title>
+    <link rel="stylesheet" href="/standard.css">
+    <link rel="stylesheet" href="/kontakt.css">
+    <link rel="icon" type="image/x-icon" href="/Fotos/Favicon.png">
+</head>
+<body>
+    <a href="/" style="text-decoration: none;"><h2>Portfolio</h2></a>
+    <a href="/" style="text-decoration: none;"><h1 style="margin-bottom: 10px;">Leon Mayer</h1></a>
+    <div id="buttons">
+        <a href="/">FOTOS</a>
+        <a href="/filme/">FILME</a>
+        <a href="/über-mich/">ÜBER MICH</a>
+    </div>
+    <h3>Kontakt</h3>
+    <p>Du hast ein Projekt, für das du einen Fotografen oder Filmemacher brauchst?</p>
+
+
+
+    <div id="emailBox">
+        <p>E-Mail:</p>
+        <a href="mailto:leonmayer.fotos@gmail.com">leonmayer.fotos@gmail.com</a>
+    </div>    
+
+
+    <script>
+                const textarea = document.getElementById('nachricht');
+        const form = document.getElementsByTagName("form");
+
+        function resizeTextarea() {
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 1 + 'px';
+        }
+
+        textarea.addEventListener('input', resizeTextarea);
+
+        // Initial resize
+        resizeTextarea();
+
+        // Resize on window resize
+        window.addEventListener('resize', resizeTextarea);
+    </script>
+</body>
+</html>

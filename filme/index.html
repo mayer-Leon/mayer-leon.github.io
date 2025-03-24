@@ -17,27 +17,30 @@
     </style>
 </head>
 <body>
-    <h2>Portfolio</h2>
-    <h1 style="margin-bottom: 10px;">Leon Mayer</h1>
-    <hr id="firstHr">
+    <a href="/" style="text-decoration: none;"><h2>Portfolio</h2></a>
+    <a href="/" style="text-decoration: none;"><h1 style="margin-bottom: 10px;">Leon Mayer</h1></a>
     <div id="buttons">
         <a href="/">FOTOS</a>
-        <a href="/filme" class="shadow" style="color: black; background-color: white; font-weight: 600;">FILME</a>
-        <a href="/über-mich">ÜBER MICH</a>
+        <a href="/filme/" class="shadow" style="color: black; background-color: white; font-weight: 600;">FILME</a>
+        <a href="/über-mich/">ÜBER MICH</a>
     </div>
-    <hr id="secondHr">
+    <a href="/kontakt/" class="contact">Kontaktiere mich hier</a>
+
+    <h3 style="margin-bottom: 2px;">FASCHINGSFEIER 2025 - Eventvideo</h3>
+    <p style="color: #b8b8b8; margin-top: 0; font-size: 0.9rem;" >Kamera, Schnitt, Color Grading</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kY2e0JKY5t4?controls=1&showinfo=0&rel=0&modestbranding=1&vq=hd1080" title="FASCHINGSFEIER 2025 - Fitzinger & Hofbauer" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    <hr class="width80">
 
     <h3 style="margin-bottom: 2px;">FALL - Herbstlicher Kurzfilm</h3>
     <p style="color: #b8b8b8; margin-top: 0; font-size: 0.9rem;" >Konzept, Schnitt, VFX, Color-Grading</p>
     <iframe width="1280" height="640" src="https://www.youtube.com/embed/0U8Gvdx6nfU?controls=1&showinfo=0&rel=0&modestbranding=1&vq=hd1080" title="FALL - Herbstlicher Kurzfilm" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <hr class="width80">
 
-    <h3 style="margin-bottom: 2px;">GRIECHENLAND 2024 - Highlights</h3>
+    <h3 style="margin-bottom: 2px;">GRIECHENLAND 2024 - Highlightvideo</h3>
     <p style="color: #b8b8b8; margin-top: 0; font-size: 0.9rem;" >Kamera, Schnitt, Color-Grading, SFX</p>
     <iframe width="1280" height="640" src="https://www.youtube.com/embed/SDPRp-0QzoE?controls=1&showinfo=0&rel=0&modestbranding=1&vq=hd1080" title="Griechenland 2024 - Highlights" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <hr class="width80">
 
-    <h3 style="margin-bottom: 2px;">MAIBAUMFEST 2024</h3>
+    <h3 style="margin-bottom: 2px;">MAIBAUMFEST 2024 - Eventvideo</h3>
     <p style="color: #b8b8b8; margin-top: 0; font-size: 0.9rem;">Kameraführung, Schnitt</p>
     <iframe width="1280" height="640" src="https://www.youtube.com/embed/i1Dke2Pkg2s?controls=1&showinfo=0&rel=0&modestbranding=1&vq=hd1080" title="Maibaumfest 2024" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <hr class="width80">
@@ -47,23 +50,15 @@
     <iframe width="1280" height="640" src="https://www.youtube.com/embed/bCW0jVnxfGk?controls=1&showinfo=0&rel=0&modestbranding=1&vq=hd1080" title="Schotter-Flüge" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <div id="footer">
-        <p>©Leon Mayer<br><span class="xs">12/2024</span></p>
+        <p>©Leon Mayer<br><span class="xs">03/2025</span></p>
         <div id="socials">
             <a href="https://instagram.com/leonm.fotos/"><img src="/Fotos/Insta.jpg" alt="Instagram"></a>
             <a href="https://youtube.com/@leonm.videos/"><img src="/Fotos/YT.jpg" alt="YouTube"></a>
-            <button onclick="email()"><img src="/Fotos/Mail.jpg" alt="E-Mail"></button>
+            <a href="/kontakt/"><img src="/Fotos/Mail.jpg" alt="E-Mail"></a>
         </div>
-        <a href="mailto:leonmayer.fotos@gmail.com" id="mail" style="display: none;">leonmayer.fotos@gmail.com</a>
     </div>
 
     <script>
-        function email() {
-            let mail = document.getElementById("mail");
-            mail.style.display = "block";
-            let socials = document.getElementById("socials");
-            socials.style.marginBottom = "0px";
-        };
-
         const videos = document.querySelectorAll(".videos");
         videos.forEach(video => {
         video.style.height = document.body.scrollWidth * 0.95 / 2 + "px";

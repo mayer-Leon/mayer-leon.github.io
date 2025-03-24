@@ -93,6 +93,7 @@ button {
     max-width: 90%;
     width: 396px;
     margin: auto;
+    margin-top: 40px;
 }
 
 #buttons a {
@@ -117,14 +118,21 @@ hr {
     max-width: 90%;
 }
 
-#firstHr {
-    margin-top: 40px;
-    margin-bottom: 6px;
+#titleHr {margin-top: 30px;
+    
 }
 
-#secondHr {
-    margin-top: 6px;
-    margin-bottom: 50px;
+.contact {
+    font-size: 16px;
+    color: #bbbbbb;
+    transition: 200ms;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.contact:hover {
+    color: #ffffff;
 }
 
 button:hover {

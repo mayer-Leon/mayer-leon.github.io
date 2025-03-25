@@ -216,3 +216,7 @@ button:hover {
         box-shadow: 0px 0px 30px var(--shadow);
     }
 }
+
+main {
+    min-height: calc(100vh - 400px);
+}

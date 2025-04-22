@@ -170,21 +170,22 @@ h4 {
     font-weight: 600;
 }
 
-#emailBox p, #emailBox a {
+.contact {
     font-size: 1rem;
-    padding: 0;
-    margin: 0;
+    padding: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #323232;
+    font-weight: 450;
+    display: inline-block;
+    color: white;
 }
 
-#emailBox p {
-    font-weight: 600;
-}
-
-#emailBox {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+.contact:hover {
+    background-color: #323232;
 }

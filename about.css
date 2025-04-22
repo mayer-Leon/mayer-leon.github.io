@@ -173,8 +173,8 @@
     max-width: 95%;
     max-height: 95%;
     aspect-ratio: 2 / 3;
-    border-radius: 3px; /* Apply rounded corners here */
-    overflow: hidden; /* Ensure the image respects the border-radius */
+    border-radius: 3px;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     transition: 200ms ease-in-out;

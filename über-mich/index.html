@@ -34,7 +34,22 @@
     </div>
 
     <div class="content">
-        <div id="intro"><p class="first text intro"><span class="b">Hallo!</span> Ich bin <span class="b">Leon Mayer</span>, 15 Jahre alt, und ich verfolge seit ich das erste Mal eine Kamera in der Hand hielt das Ziel, professioneller Fotograf und Filmemacher zu werden.</p></div>
+        <div id="intro"><p class="first text intro"><span class="b">Hallo!</span> Ich bin <span class="b">Leon Mayer</span>, <script>
+                    let birthDate = new Date("2009-08-02");
+        let newDate = new Date();
+        
+        let age = newDate.getFullYear() - birthDate.getFullYear();
+        
+        let hasHadBirthday = 
+        newDate.getMonth() > birthDate.getMonth() || 
+        (newDate.getMonth() === birthDate.getMonth() && newDate.getDate() >= birthDate.getDate());
+
+        if (!hasHadBirthday) {
+            age--;
+        }
+
+        document.writeln(age);
+        </script> Jahre alt, und ich verfolge seit ich das erste Mal eine Kamera in der Hand hielt das Ziel, professioneller Fotograf und Filmemacher zu werden.</p></div>
         <div id="mobileFotos">
             <img src="/Fotos/Leon_mit_Kamera.jpg" onclick="fullLeon()" alt="Leon mit Kamera in der Hand">
             <img src="/Fotos/Leon_mit_Gimbal.jpg" onclick="fullKamera()" alt="Nur Kamera in der Hand">
@@ -159,3 +174,4 @@
     </script>
 </body>
 </html>
+

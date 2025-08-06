@@ -6,15 +6,15 @@
     <meta name="google-site-verification" content="gxlQo9ncnPRMfKp_xRqcJNYkzBzLmPYs5DAbG5XaQaI"/>
     <meta property="og:title" content="Leon Mayer - Portfolio">
     <meta property="og:description" content="Eine Sammlung meiner besten Fotos und Filme.">
-    <meta property="og:image" content="/Fotos/Preview.jpg">
+    <meta property="og:image" content="/Bilder/Preview.jpg">
     <title>Leon Mayer - Portfolio</title>
     <link rel="stylesheet" href="/standard.css">
     <link rel="stylesheet" href="/fotogalerie.css">
-    <link rel="icon" type="image/x-icon" href="/Fotos/Favicon.png">
+    <link rel="icon" type="image/x-icon" href="/Bilder/Favicon.png">
 </head>
 <body>
-    <a href="/" style="text-decoration: none;"><h2>Portfolio</h2></a>
-    <a href="/" style="text-decoration: none;"><h1 style="margin-bottom: 10px;">Leon Mayer</h1></a>
+    <h2>Portfolio</h2>
+    <h1 style="margin-bottom: 10px;">Leon Mayer</h1>
     <div id="buttons">
         <a href="/" class="shadow" style="color: black; background-color: white; font-weight: 600;">FOTOS</a>
         <a href="/filme/">FILME</a>
@@ -23,50 +23,59 @@
     <a href="/kontakt/" class="contact">Kontaktiere mich hier</a>
     
     <div id="gallery">
-        <img src="/Fotos/small/IMG2024-0220.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(1)">
-        <img src="/Fotos/small/IMG2024-0601.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(2)">
-        <img src="/Fotos/small/IMG2024-0432.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(3)">
-        <img src="/Fotos/small/IMG2024-0430.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(4)">
+        <script>
+            let allPhotos;
+            allPhotos = [
+                "IMG2024-0220.jpg",
+                "IMG2024-0601.jpg",
+                "IMG2024-0432.jpg",
+                "IMG2024-0430.jpg",
+                
+                "IMG2024-0388.jpg",
+                "IMG2024-0387.jpg",
+                "IMG2024-0289.jpg",
+                "DSC02227.jpg",
+                
+                "IMG2024-0438.jpg",
+                "PIC04850.jpg",
+                "PIC07143.jpg",
+                "PIC05543.jpg",
+                
+                "IMG2024-0671.jpg",
+                "PIC03129.jpg",
+                "IMG2024-0767.jpg",
+                "TAC00059.jpg",
+                
+                "PIC05027.jpg",
+                "IMG08939.jpg",
+                "IMG08244.jpg",
+                "IMG08201.jpg",
+                
+                "IMG2024-0402.jpg",
+                "IMG2024-0095.jpg",
+                "IMG2024-0032.jpg",
+                "IMG2024-0160.jpg",
+                
+                "IMG2024-0232.jpg",
+                "IMG2025-0272.jpg",
+                "IMG2024-0675.jpg",
+                "IMG2024-0856.jpg",
+                
+                "IMG2024-0906.jpg",
+                "IMG2024-0628.jpg",
+                "IMG2024-0824.jpg",
+                "IMG2024-0948.jpg",
+                
+                "IMG2025-0384.jpg",
+                "IMG2025-0314.jpg",
+                "IMG2025-0315.jpg",
+                "IMG20250602-17.jpg",
+            ];
 
-        <img src="/Fotos/small/IMG2024-0388.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(5)">
-        <img src="/Fotos/small/IMG2024-0387.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(6)">
-        <img src="/Fotos/small/IMG2024-0289.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(7)">
-        <img src="/Fotos/small/DSC02227.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(8)">
-
-        <img src="/Fotos/small/IMG2024-0438.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(9)">
-        <img src="/Fotos/small/PIC04850.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(10)">
-        <img src="/Fotos/small/PIC07143.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(11)">
-        <img src="/Fotos/small/PIC05543.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(12)">
-
-        <img src="/Fotos/small/IMG2024-0671.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(13)">
-        <img src="/Fotos/small/PIC03129.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(14)">
-        <img src="/Fotos/small/IMG2024-0767.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(15)">
-        <img src="/Fotos/small/TAC00059.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(16)">
-        
-        <img src="/Fotos/small/PIC05027.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(17)">
-        <img src="/Fotos/small/IMG08939.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(18)">
-        <img src="/Fotos/small/IMG08244.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(19)">
-        <img src="/Fotos/small/IMG08201.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(20)">
-
-        <img src="/Fotos/small/IMG2024-0402.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(21)">
-        <img src="/Fotos/small/IMG2024-0095.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(22)">
-        <img src="/Fotos/small/IMG2024-0032.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(23)">
-        <img src="/Fotos/small/IMG2024-0160.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(24)">
-
-        <img src="/Fotos/small/IMG2024-0232.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(25)">
-        <img src="/Fotos/small/IMG08048.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(26)">
-        <img src="/Fotos/small/IMG2024-0675.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(27)">
-        <img src="/Fotos/small/IMG2024-0856.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(28)">
-
-        <img src="/Fotos/small/IMG2024-0906.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(29)">
-        <img src="/Fotos/small/IMG2024-0628.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(30)">
-        <img src="/Fotos/small/IMG2024-0824.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(31)">
-        <img src="/Fotos/small/IMG2024-0948.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(32)">
-
-        <img src="/Fotos/small/IMG2025-0037.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(33)">
-        <img src="/Fotos/small/IMG2024-0361.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(34)">
-        <img src="/Fotos/small/PIC07159-3.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(35)">
-        <img src="/Fotos/small/IMG2025-0124.jpg" class="galleryPhotos" loading="lazy" onclick="currentSlide(36)">
+            for (let i = 1; i <= allPhotos.length; i++) {
+                document.writeln("<img src='/Bilder/small/" + allPhotos[i-1] + "' class='galleryPhotos' loading='lazy' onclick='currentSlide(" + i + ")'>");
+            }
+        </script>
     </div>
 
     <div id="fullScreen">
@@ -78,11 +87,11 @@
     <div id="dynamic-gallery"></div>
 
     <div id="footer">
-        <p>© Leon Mayer<br><span class="xs">04/2025</span></p>
+        <p>© Leon Mayer<br><span class="xs">08/2025</span></p>
         <div id="socials">
-            <a href="https://instagram.com/leonm.fotos/"><img src="/Fotos/Insta.jpg" alt="Instagram"></a>
-            <a href="https://youtube.com/@leonm.videos/"><img src="/Fotos/YT.jpg" alt="YouTube"></a>
-            <a href="/kontakt/"><img src="/Fotos/Mail.jpg" alt="E-Mail"></a>
+            <a href="https://instagram.com/leonm.fotos/"><img src="/Bilder/Insta.jpg" alt="Instagram"></a>
+            <a href="https://youtube.com/@leonm.videos/"><img src="/Bilder/YT.jpg" alt="YouTube"></a>
+            <a href="/kontakt/"><img src="/Bilder/Mail.jpg" alt="E-Mail"></a>
         </div>
     </div>
 

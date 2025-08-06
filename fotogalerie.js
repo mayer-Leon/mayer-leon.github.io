@@ -96,14 +96,13 @@ function width() {
 
 
 document.addEventListener("keydown", function(event) {
-    if (event.key === "ArrowLeft" || event.key === "a" || event.key === "PageUp") {
+    if (event.key === "ArrowLeft" || event.key === "ArrowUp" || event.key === "a" || event.key === "PageUp") {
         event.preventDefault();
         prev.click();
-    } else if (event.key === "ArrowRight" || event.key === "d" || event.key === "PageDown") {
+    } else if (event.key === "ArrowRight" || event.key === "ArrowDown" || event.key === "d" || event.key === "PageDown") {
         event.preventDefault();
         next.click();
     }
-    // Do not preventDefault for other keys (like F11 or Ctrl+S)
 });
 
 
@@ -240,7 +239,7 @@ const sourceDiv = document.getElementById('gallery');
 
         
         const currentSrc = clonedImage.src;
-        clonedImage.src = currentSrc.replace("/Fotos/small/", "/Fotos/");
+        clonedImage.src = currentSrc.replace("/Bilder/small/", "/Bilder/");
         
         // Add the "fullScreen" class to the cloned image
         clonedImage.classList.add('fullScreen');

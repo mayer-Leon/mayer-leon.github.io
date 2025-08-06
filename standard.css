@@ -13,6 +13,8 @@
     --menuHeight: 50px;
     --pages: 850px;
     --maxPages: 90%;
+
+    --border: 0px;
 }
 
 body {
@@ -38,17 +40,17 @@ body {
 h1 {
     margin-bottom: 0px;
     margin-top: 0px;
+    line-height: 40px;
     font-size: 35px;
     font-weight: 700;
-    line-height: 40px;
 }
 
 h2 {
     margin-top: 35px;
     margin-bottom: 0px;
-    font-weight: 400;
-    font-size: 1.3rem;
     line-height: 20px;
+    font-weight: 300;
+    font-size: 18px;
 }
 
 .h3 {
@@ -107,7 +109,7 @@ button {
     font-size: 1.05rem;
     font-weight: 500;
     transition: 200ms;
-    border-radius: 3px;
+    border-radius: var(--border);
 }
 
 hr {
@@ -129,7 +131,8 @@ hr {
     display: inline-block;
     margin-top: 15px;
     margin-bottom: 45px;
-    text-decoration-thickness: 1.5px;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
 }
 
 .contact:hover {
@@ -220,4 +223,18 @@ button:hover {
 
 main {
     min-height: calc(100vh - 400px);
+}
+
+.deselect {
+    font-weight: 100;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.width80 {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-bottom: 80px;
 }

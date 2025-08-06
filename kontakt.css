@@ -162,6 +162,7 @@ input[type=submit]:hover {
 h3 {
     font-size: 23px;
     margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 h4 {
@@ -175,7 +176,7 @@ h4 {
     padding: 2px;
     padding-left: 25px;
     padding-right: 25px;
-    border-radius: 3px;
+    border-radius: var(--border);
     text-decoration: none;
     margin-top: 10px;
     border-style: solid;
@@ -188,4 +189,15 @@ h4 {
 
 .contact:hover {
     background-color: #323232;
+}
+
+#gimbal {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    width: 500px;
+    max-width: 90%;
+    border-radius: 3px 3px 0px 0px;
+    margin-bottom: -30px;
 }

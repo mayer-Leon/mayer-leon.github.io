@@ -2,32 +2,32 @@
     color: white;
 }
 
-#space {
-    height: var(--menuHeight);
+h3 {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+p {
+    color: #b8b8b8; margin-top: 0; font-size: 0.9rem;
+    font-family: var(--joan);
+    font-size: 1.05rem;
 }
 
 .videos {
     width: 95%;
     max-width: 1000px;
     max-height: 500px;
-    border-radius: var(--border);
+    border-radius: var(--borderRadius);
 }
 
-
-
-.comingSoon {
-    background-color: #11202b;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    max-width: 1000px;
-    border-radius: 5px;
+.width80 {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
-.comingSoon p {
-    font-size: 15px;
-    font-weight: 500;
+.shorts {
+    width: 400px;
+    height: 711px;
 }

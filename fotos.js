@@ -5,6 +5,8 @@ let next = document.getElementById("next");
 prev.disabled = true;
 next.disabled = true;
 
+let socials = document.getElementsByClassName("socials")[0];
+
 //let slides = document.getElementsByClassName('mySlides');
 
 //Bildwechsel mit Tastatur
@@ -169,6 +171,7 @@ function closeFullScreen() {
     fullScreen.style.display = "none";
     window.onscroll = null;
     document.body.style.overflow = "visible";
+    socials.style.opacity = "1";
 
     clickCounter = 0;
     //menu.style.display = "flex";
@@ -242,7 +245,6 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "flex";
     fullScreen.style.display = "block";
     document.body.style.overflow = "hidden";
-    let socials = document.getElementsByClassName("socials")[0];
     socials.style.opacity = "0";
 
     prev.disabled = false;

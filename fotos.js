@@ -18,12 +18,16 @@ document.addEventListener("keydown", function (event) {
     }
 });
 
-function createImageGallery() {
-    const gallery = document.getElementById("gallery");
+function createImageGalleries() {
+    const galleries = Array.from(document.getElementsByClassName("gallery"));
+    galleries.forEach(createImageGallery);
+}
+
+function createImageGallery(gallery) {
     const images = Array.from(gallery.getElementsByTagName("img"));
     const container = document.createElement("div");
 
-    container.id = "gallery-container";
+    container.className = "gallery-container";
     gallery.parentNode.insertBefore(container, gallery);
 
     //Gibt Anzahl an Bildern pro Reihe anhand der Bildschirmbreite zurück
@@ -132,9 +136,15 @@ function createImageGallery() {
     gallery.remove();
 }
 
+function copyImages() {
+    const sourceDivs = document.getElementsByClassName("gallery");
+    for (let i = 0; i < sourceDivs.length; i++) {
+        copyImagesWithClass(sourceDivs[i]);
+    }
+}
+
 //Kopiert Galerie-Bilder in voller Qualität für die Vollbild-Ansicht
-function copyImagesWithClass() {
-    const sourceDiv = document.getElementById("gallery");
+function copyImagesWithClass(sourceDiv) {
     const targetDiv = document.getElementById("fullScreen");
     const images = sourceDiv.querySelectorAll(".galleryPhotos");
 
@@ -143,16 +153,12 @@ function copyImagesWithClass() {
         clonedImage.src = clonedImage.src.replace("/Bilder/LowRes/", "/Bilder/");
         clonedImage.classList.add("fullScreen");
         targetDiv.appendChild(clonedImage);
-    }
 
-    //Fügt ein <div> als ParentNode zu jedem Bild hinzu
-    const fullScreenImages = targetDiv.getElementsByTagName("img");
-    Array.from(fullScreenImages).forEach((img) => {
         const wrapper = document.createElement("div");
         wrapper.className = "imageContainer";
-        img.parentNode.insertBefore(wrapper, img);
-        wrapper.appendChild(img);
-    });
+        wrapper.appendChild(clonedImage);
+        targetDiv.appendChild(wrapper);
+    }
 }
 
 //Schließt die Vollbild-Ansicht
@@ -236,7 +242,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "flex";
     fullScreen.style.display = "block";
     document.body.style.overflow = "hidden";
-    let socials = document.getElementById("socials");
+    let socials = document.getElementsByClassName("socials")[0];
     socials.style.opacity = "0";
 
     prev.disabled = false;
@@ -347,6 +353,6 @@ function switchSource(img) {}
 
 // Call the function when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", () => {
-    copyImagesWithClass();
-    createImageGallery();
+    copyImages();
+    createImageGalleries();
 });

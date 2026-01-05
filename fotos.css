@@ -27,7 +27,7 @@
 /* --- FOTOSYSTEM --- */
 
 
-#gallery-container {
+.gallery-container {
     width: 90%;
     margin: 0 auto;
     transition: 500ms;
@@ -39,7 +39,7 @@
     }
 }
 
-#gallery {
+.gallery {
     display: none;
     position: relative;
     z-index: 5;

@@ -11,26 +11,42 @@
     <header id="headerJS"></header>
 
     <main>
-        <div class="line"></div>
-        <h2 class="collectionH">Behind The Scenes</h2>
-
-        <div id="gallery">
-            <script>
-                let allPhotos;
-                allPhotos = [
+        <script>
+            let categories = [
+                ["Behind The Scenes",
                     "250828_VinziRast_BTS-Fotos_021.jpg",
                     "250724_Johannes_Dahoam_BTS-Fotos_024.jpg",
                     "250828_VinziRast_BTS-Fotos_013.jpg",
                     "250801_Adesso_BTS-Fotos_009.jpg",
                     "250801_Adesso_BTS-Fotos_018.jpg",
                     "250801_Adesso_BTS-Fotos_010.jpg",
-                ];
+                ],
+                ["Test 1",
+                    "250828_VinziRast_BTS-Fotos_021.jpg",
+                    "250724_Johannes_Dahoam_BTS-Fotos_024.jpg",
+                ],
+                ["Test 2",
+                    "250801_Adesso_BTS-Fotos_018.jpg",
+                    "250801_Adesso_BTS-Fotos_010.jpg",
+                ],
+                ["Test 3",
+                    "250828_VinziRast_BTS-Fotos_013.jpg",
+                    "250801_Adesso_BTS-Fotos_009.jpg",
+                ]
+            ];
 
-                for (let i = 1; i <= allPhotos.length; i++) {
-                    document.writeln("<img src='/Bilder/LowRes/" + allPhotos[i-1] + "' class='galleryPhotos' loading='lazy' onclick='currentSlide(" + i + ")'>");
+            let index = 1;
+            for (let i = 0; i < categories.length; i++) {
+                document.writeln("<div class='line'></div>");
+                document.writeln("<h2 class='collectionH'>" + categories[i][0] + "</h2>");
+                document.writeln("<div class='gallery'>");
+                for(let j = 1; j < categories[i].length; j++) {
+                    document.writeln("<img src='/Bilder/LowRes/" + categories[i][j] + "' class='galleryPhotos' loading='lazy' onclick='currentSlide(" + index + ")'>");
+                    index++;
                 }
-            </script>
-        </div>
+                document.writeln("</div>");
+            }
+        </script>
 
     </main>    
     <div id="fullScreen">

@@ -11,50 +11,9 @@
     <header id="headerJS"></header>
 
     <main>
-        <script>
-            let categories = [
-                ["Behind The Scenes",
-                    "250828_VinziRast_BTS-Fotos_021.jpg",
-                    "250724_Johannes_Dahoam_BTS-Fotos_024.jpg",
-                    "250828_VinziRast_BTS-Fotos_013.jpg",
-                    "250801_Adesso_BTS-Fotos_009.jpg",
-                    "250801_Adesso_BTS-Fotos_018.jpg",
-                    "250801_Adesso_BTS-Fotos_010.jpg",
-                ],
-                ["ui iouuit io",
-                    "250828_VinziRast_BTS-Fotos_021.jpg",
-                    "250724_Johannes_Dahoam_BTS-Fotos_024.jpg",
-                ],
-                ["Test 2",
-                    "250801_Adesso_BTS-Fotos_018.jpg",
-                    "250801_Adesso_BTS-Fotos_010.jpg",
-                ],
-                ["Vinzirast + Adesso",
-                    "250828_VinziRast_BTS-Fotos_013.jpg",
-                    "250801_Adesso_BTS-Fotos_009.jpg",
-                ]
-            ];
-
-            let index = 1;
-            for (let i = 0; i < categories.length; i++) {
-                document.writeln("<div class='line'></div>");
-                document.writeln("<h2 class='collectionH'>" + categories[i][0] + "</h2>");
-                document.writeln("<div class='gallery'>");
-                for(let j = 1; j < categories[i].length; j++) {
-                    document.writeln("<img src='/Bilder/LowRes/" + categories[i][j] + "' class='galleryPhotos' loading='lazy' onclick='currentSlide(" + index + ")'>");
-                    index++;
-                }
-                document.writeln("</div>");
-            }
-        </script>
-
-    </main>    
-    <div id="fullScreen">
-        <button class="fullScreenButton" id="closeFullScreen" onclick="closeFullScreen()">✖</button>
-        <button class="fullScreenButton" id="prev" onclick="plusSlides(-1)">&#10094;</button>
-        <button class="fullScreenButton" id="next" onclick="plusSlides(+1)">&#10095;</button>
-    </div>
-    <div id="dynamic-gallery"></div>
+        <i>Diese Website wird gerade neu aufgebaut.</i><br>
+        <a href="/portfolio" style="color: aqua;">Portfolio</a>
+    </main>
 
     <footer id="footerJS"></footer>
 

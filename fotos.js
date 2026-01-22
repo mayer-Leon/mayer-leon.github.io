@@ -1,6 +1,7 @@
 //Buttons zum Bildwechsel in der Vollbild-Ansicht
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
+let closeFullScreenB = document.getElementById("closeFullScreenB");
 
 prev.disabled = true;
 next.disabled = true;
@@ -11,12 +12,15 @@ let socials = document.getElementsByClassName("socials")[0];
 
 //Bildwechsel mit Tastatur
 document.addEventListener("keydown", function (event) {
-    if (event.key === "ArrowLeft" || event.key === "ArrowUp" || event.key === "a" || event.key === "PageUp") {
+    if (event.key === "ArrowLeft" || event.key === "ArrowUp" || event.key === "a" || event.key === "w" || event.key === "PageUp") {
         event.preventDefault();
         prev.click();
-    } else if (event.key === "ArrowRight" || event.key === "ArrowDown" || event.key === "d" || event.key === "PageDown") {
+    } else if (event.key === "ArrowRight" || event.key === "ArrowDown" || event.key === "d" || event.key === "s" || event.key === "PageDown") {
         event.preventDefault();
         next.click();
+    } else if (event.key === "x") {
+        event.preventDefault();
+        closeFullScreenB.click();
     }
 });
 
@@ -39,7 +43,7 @@ function createImageGallery(gallery) {
         if (width >= 1100) return 3; // Laptops
         if (width >= 1000) return 2; // Tablets
         if (width >= 500) return 2; // New breakpoint
-        return 1; // Mobile
+        return 2; // Mobile
     }
 
     //Erstellt für jede Reihe an Bildern ein <div>-Element
@@ -358,3 +362,15 @@ document.addEventListener("DOMContentLoaded", () => {
     copyImages();
     createImageGalleries();
 });
+
+document.querySelectorAll('#linkCollection a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default behavior of anchor tag
+      const targetId = this.getAttribute('href').substring(1); // Get the id of the target section
+      const targetElement = document.getElementById(targetId); // Find the target element
+      if (targetElement) {
+        // Scroll to the target element smoothly
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });

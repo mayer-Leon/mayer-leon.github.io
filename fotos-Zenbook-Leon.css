@@ -1,0 +1,226 @@
+.aFotos {
+    color: white;
+}
+
+
+/* --- FOTOSYSTEM --- */
+
+
+.gallery-container {
+    width: 80%;
+    margin: 0 auto;
+    transition: 500ms;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1000px) {
+    .gallery-container {
+        width: 95%;
+    }
+}
+
+.gallery {
+    display: none;
+    position: relative;
+    z-index: 5;
+}
+
+.image-group {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 13px;
+    gap: 13px;
+}
+
+.image-wrapper {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--borderRadius);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-wrapper.loaded img {
+    opacity: 1;
+}
+
+@media (max-width: 400px) {
+    .image-wrapper {
+        width: 100% !important;
+    }
+}
+
+.galleryPhotos {
+    border-radius: var(--borderRadius);
+}
+
+.galleryPhotos:hover {
+    cursor: pointer;
+}
+
+#fullScreen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    user-select: none;
+    -webkit-user-select: none; /* Safari and Chrome */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;
+
+    z-index: 5;
+}
+
+#fullScreen button {
+    user-select: none;
+    -webkit-user-select: none; /* Safari and Chrome */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;
+}
+
+.fullScreen:hover {
+    cursor: default;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderRadius);
+}
+
+.fullScreen {
+    margin: auto;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+    height: auto;
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border-radius: var(--borderRadius);
+}
+
+.fullScreenButton {
+    display: block;
+    position: fixed;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    background-color: #0707077a;
+
+    color: white;
+    backdrop-filter: blur(10px);
+    font-size: 18px;
+    font-weight: 100;
+    border-radius: var(--borderRadius);
+    border-style: none;
+
+    transition: 300ms;
+    z-index: 3;
+}
+
+.fullScreenButton:hover {
+    cursor: pointer;
+}
+
+#closeFullScreen {
+    right: 30px;
+}
+
+#expand {
+    right: 75px;
+    font-size: 22px;
+    font-weight: 900;
+    padding-top: 2px;
+}
+
+#prev {
+    bottom: 30px;
+    left: 30px;
+}
+
+#next {
+    bottom: 30px;
+    right: 30px;
+}
+
+@media (hover: none) and (pointer: coarse), (any-pointer: coarse) {
+    .fullScreenButton:hover {
+        animation: hoverEffect 200ms forwards;
+    }
+}
+
+    @keyframes hoverEffect {
+        0% {
+            background-color: #0707077a;
+            color: white;
+        }
+
+        20% {
+            background-color: white;
+            color: black;
+        }
+
+        80% {
+            background-color: white;
+            color: black;
+        }
+
+        100% {
+            background-color: #0707077a;
+            color: white;
+        }
+    }
+
+@media (hover: hover) and (pointer: fine) {
+    .fullScreenButton:hover {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#linkCollection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#linkCollection a {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background-color: #353535;
+    padding: 2px;
+    width: 80px;
+    border-radius: 0px;
+    margin: none;
+
+    transition: 200ms;
+}
+
+#linkCollection a:hover {
+    background-color: #4e4e4e;
+}

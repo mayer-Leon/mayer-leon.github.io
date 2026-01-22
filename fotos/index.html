@@ -11,14 +11,112 @@
     <header id="headerJS"></header>
 
     <main>
-        <i>Diese Website wird gerade neu aufgebaut.</i><br>
-        <a href="/portfolio" style="color: aqua;">Portfolio</a>
-    </main>
+        <div id="linkCollection">
+            <a href="#People">People</a>
+            <a href="#Travel">Travel</a>
+            <a href="#Events">Events</a>
+            <a href="#Behind The Scenes" id="bts">BTS</a>
+        </div>
+        <script>
+            let categories = [
+                ["People",
+                    "1IMG-02.jpg",
+                    "1IMG-04.jpg",
+                    "1IMG-12.jpg",
+                    "1IMG-26.jpg",
+                    
+                    "1IMG-42.jpg",
+                    "1IMG-50.jpg",
+                    "1IMG-27.jpg",
+                    "1IMG-39.jpg",
+                    
+                    "1IMG-41.jpg",
+                    "1IMG-54.jpg",
+                    "1IMG-40.jpg",
+                    "1IMG-38.jpg",
+
+                    "1IMG-37.jpg",
+                    "1IMG-34.jpg",
+                    "1IMG-21.jpg",
+                    "1IMG-17.jpg",
+                    
+                    "1IMG-24.jpg",
+                    "1IMG-58.jpg",
+                    "1IMG-49.jpg",
+                    "1IMG-53.jpg",
+                ],
+                ["Travel",
+                    "2IMG-04.jpg",
+                    "2IMG-09.jpg",
+                    "2IMG-10.jpg",
+                    "2IMG-05.jpg",
+
+                    "2IMG-19.jpg",
+                    "2IMG-13.jpg",
+                    "2IMG-22.jpg",
+                    "2IMG-12.jpg",
+                    
+                    "2IMG-17.jpg",
+                    "2IMG-26.jpg",
+                    "2IMG-11.jpg",
+                    "2IMG-07.jpg",
+                    
+                    "2IMG-03.jpg",
+                    "2IMG-14.jpg",
+                    "2IMG-18.jpg",
+                ],
+                ["Events",
+                    "3IMG-14.jpg",
+                    "3IMG-31.jpg",
+                    "3IMG-04.jpg",
+                    "3IMG-44.jpg",
+
+                    "3IMG-09.jpg",
+                    "3IMG-10.jpg",
+                    "3IMG-33.jpg",
+                    "3IMG-39.jpg",
+
+                    "3IMG-40.jpg",
+                    "3IMG-12.jpg",
+                    "3IMG-24.jpg",
+                    "3IMG-20.jpg",
+
+                ],
+                ["Behind The Scenes",
+                    "4IMG-53.jpg",
+                    /*"4IMG-34.jpg",
+                    "4IMG-29.jpg",
+                    "4IMG-32.jpg",*/
+
+                    "4IMG-46.jpg",
+                    "4IMG-39.jpg",
+                ]
+            ];
+
+            let index = 1;
+            for (let i = 0; i < categories.length; i++) {
+                document.writeln("<div class='line'></div>");
+                document.writeln("<h2 id='" + categories[i][0] + "'>" + categories[i][0] + "</h2>");
+                document.writeln("<div class='gallery'>");
+                for(let j = 1; j < categories[i].length; j++) {
+                    document.writeln("<img src='/Bilder/LowRes/" + categories[i][j] + "' class='galleryPhotos' loading='lazy' onclick='currentSlide(" + index + ")'>");
+                    index++;
+                }
+                document.writeln("</div>");
+            }
+        </script>
+
+    </main>    
+    <div id="fullScreen">
+        <button class="fullScreenButton" id="closeFullScreen" onclick="closeFullScreen()">✖</button>
+        <button class="fullScreenButton" id="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="fullScreenButton" id="next" onclick="plusSlides(+1)">&#10095;</button>
+    </div>
+    <div id="dynamic-gallery"></div>
 
     <footer id="footerJS"></footer>
 
     <script src="/nav.js"></script>
     <script src="/fotos.js"></script>
-    <script>window.location.href = '/portfolio'</script>
 </body>
 </html>

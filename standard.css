@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --bg: #070707;
-    --theme: #ffe7a4;
+    --bg: #0a0a0a;
+    --themed: #ffe7a4;
+    --theme: #404040;
+    --themeDark: #2b2b2b;
 }
 
 body {
@@ -44,8 +46,49 @@ h1 {
     margin-bottom: 0;
 }
 
+.line {
+  background-color: white;
+  width: 70%;
+  height: 1px;
+  position: relative;
+  margin: 40px auto 0 auto;
+  margin-top: 30px;
+  z-index: 0;
+} 
+
+@media (max-width: 1000px) {
+    .line {
+        width: 80%;
+    }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 25px;
+  background-color: var(--bg);
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 1;
+  margin-top: 0;
+  transform: translateY(-50%);
+  margin-bottom: 0px;
+}
+
+.description {
+  margin-top: -35px;
+  margin-bottom: 20px;
+  color: #a8a8a8;
+}
+
 a {    
     text-decoration: none;
+    color: white;
+}
+
+header {
+    margin-bottom: 20px;
 }
 
 header .logo {
@@ -68,7 +111,7 @@ header .logo {
         margin-left: auto;
         margin-right: auto;
 
-        background-image: linear-gradient(#00000000, #070707);
+        background-image: linear-gradient(#00000000, #0a0a0a);
         position: relative;
         margin-top: -21px;
 
@@ -191,7 +234,7 @@ footer .fPages {
 footer .fPages a{
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(207, 207, 207);
+    color: #cfcfcf;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0px;

@@ -1,0 +1,21 @@
+.aKonkt {
+    color: white;
+}
+
+.contactLink {
+    color: #d8d8d8;
+    font-size: 15px;
+    font-weight: 600;
+
+    border: solid 3px #3f3f3f;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    transition: 200ms;
+}
+
+.contactLink:hover {
+    background-color: #3f3f3f;
+    color: #ffffff;
+}

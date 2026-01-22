@@ -1,3 +1,29 @@
 .aKonkt {
     color: white;
 }
+
+.contact {
+    color: white;
+    border: 3px solid var(--theme);
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+
+    display: inline-block;
+
+
+    transition: 200ms;
+}
+
+.contact:hover {
+    background-color: var(--theme);
+}
+
+#lKamera {
+    width: 500px;
+    max-width: 90%;
+}

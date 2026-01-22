@@ -2,40 +2,20 @@
     color: white;
 }
 
-.line {
-    background-color: white;
-    width: 80%;
-    left: 10%;
-    height: 1px;
-    position: absolute;
-    margin-top: 39.5px;
-    z-index: 0;
-    display: inline-block;
-}
-
-.collectionH {
-    font-weight: 600;
-    background-color: var(--bg);
-    display: inline-block;
-    position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
-    z-index: 1;
-}
-
 
 /* --- FOTOSYSTEM --- */
 
 
 .gallery-container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     transition: 500ms;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 1000px) {
-    #gallery-container {
-        width: 90%;
+    .gallery-container {
+        width: 95%;
     }
 }
 
@@ -75,9 +55,6 @@
 }
 
 @media (max-width: 400px) {
-    .image-group {
-        flex-direction: column;
-    }
     .image-wrapper {
         width: 100% !important;
     }
@@ -145,14 +122,14 @@
     display: block;
     position: fixed;
     padding: 0;
-    width: 42px;
-    height: 42px;
+    width: 35px;
+    height: 35px;
     margin: 10px;
     background-color: #0707077a;
 
     color: white;
     backdrop-filter: blur(10px);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 100;
     border-radius: var(--borderRadius);
     border-style: none;
@@ -219,4 +196,32 @@
         background-color: #ffffff;
         color: black;
     }
+}
+
+#linkCollection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    margin: auto;
+    height: auto;
+}
+
+#linkCollection a {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--themeDark);
+    padding: 2px;
+    width: 80px;
+    border-radius: 0px;
+    margin: none;
+
+    transition: 200ms;
+}
+
+#linkCollection a:hover {
+    background-color: var(--theme);
 }

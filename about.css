@@ -1,3 +1,71 @@
 .aAbout {
     color: white;
 }
+
+
+.aboutText {
+    font-size: 16px;
+    max-width: 90%;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    line-height: 180%;
+}
+
+#portrait {
+    max-width: 90%;
+    height: 300px;
+}
+
+.line {
+    margin-top: 80px;
+}
+
+#experience {
+    margin: auto;
+}
+
+        .exp .expTime {
+            font-style: italic;
+            font-size: 15px;
+            font-weight: 300;
+            padding-right: 15px;
+            text-align: right;
+        }
+
+        .exp td {
+            padding-bottom: 20px;
+            max-width: 500px;
+        }
+
+        h5 {
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .exp td p, .softTime {
+            text-align: left;
+            margin: 0;
+            font-size: 0.9rem;
+            margin-top: 3px;
+            font-weight: 400;
+            color: #b8b8b8;
+        }
+
+.software {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .softTime {
+        text-align: center;
+    }
+
+#emoji {
+    height: 18px;
+    margin-left: 5px;
+}

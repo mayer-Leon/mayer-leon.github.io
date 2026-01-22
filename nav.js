@@ -44,7 +44,7 @@ const footer = `
             <p class="dot">•</p>
         <a href="/kontakt">Kontakt</a>
     </div>
-    <p class="fCopyright">© Leon Mayer, 2026</p>
+    <p class="fCopyright">© Leon Mayer, 01/2026</p>
 
 `;
 

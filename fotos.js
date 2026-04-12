@@ -1,3 +1,5 @@
+
+
 //Buttons zum Bildwechsel in der Vollbild-Ansicht
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
@@ -75,6 +77,8 @@ function createImageGallery(gallery) {
         }
     }
 
+    window.onload = setTimeout(updateGallery, 50);
+
     function adjustLayout() {
         const imageGroups = container.getElementsByClassName("image-group");
         Array.from(imageGroups).forEach((group) => {
@@ -137,6 +141,7 @@ function createImageGallery(gallery) {
             lastWidth = currentWidth;
         }
     });
+    
 
     // Remove the original gallery div
     gallery.remove();
